@@ -64,7 +64,7 @@ rect(screen, (248, 241, 28), (0, 279, 602, 123))
 polygon(screen, (222, 213, 153), [(412, 204), (470, 158),
                                   (430, 158), (412, 204)])
 polygon(screen, (172, 57, 57), [(412, 204), (470, 158),
-                                 (430, 158), (412, 204)], 1)
+                                (430, 158), (412, 204)], 1)
 
 # -------------------- Umbrella ------------------- #
 line(screen, (227, 130, 25), (94, 236), (94, 385), 6)
@@ -109,31 +109,14 @@ polygon(screen, (244, 81, 81), [(98, 236), (108, 264),
 polygon(screen, (172, 57, 57), [(98, 236), (108, 264),
                                 (98, 264), (98, 236)], 1)
 
-
 line(screen, (244, 81, 81), (94, 236), (94, 264), 6)
 
-# circle(screen, (255, 255, 0), (200, 200), 150)
-# circle(screen, (0, 0, 0), (200, 200), 150, 2)
-
-# eye 1
-# line(screen, (0, 0, 0), (50, 100), (180, 160), 15)
-# circle(screen, (255, 0, 0), (130, 170), 30)
-# circle(screen, (0, 0, 0), (130, 170), 30, 2)
-# circle(screen, (0, 0, 0), (130, 170), 10)
-
-# eye 2
-# line(screen, (0, 0, 0), (350, 100), (220, 160), 15)
-# circle(screen, (255, 0, 0), (260, 170), 22)
-# circle(screen, (0, 0, 0), (260, 170), 22, 2)
-# circle(screen, (0, 0, 0), (260, 170), 10)
-
-# line(screen, (0, 0, 0), (130, 280), (260, 280), 30)
 pygame.display.update()
 clock = pygame.time.Clock()
 finished = False
 
 while not finished:
-	clock.tick(FPS)
+    clock.tick(FPS)
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
 			finished = True
